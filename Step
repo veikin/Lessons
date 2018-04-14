@@ -1,0 +1,10 @@
+#1
+A = int(input())#рекомендуется спать
+B = int(input())#пересып
+H = int(input())#сейчас спит
+if H <= B and H >= A:
+    print("Это нормально")
+elif H < A:
+    print("Недосып")
+elif H > B:
+    print("Пересып")
