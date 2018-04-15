@@ -1,4 +1,4 @@
-#1
+№1
 A = int(input())#рекомендуется спать
 B = int(input())#пересып
 H = int(input())#сейчас спит
@@ -8,3 +8,16 @@ elif H < A:
     print("Недосып")
 elif H > B:
     print("Пересып")
+    
+
+
+№2
+a = 0
+while a == a:
+    a = int(input())
+    if a > 100:
+        break
+    if a < 10:
+        continue
+    if a < 101:
+        print(a)
