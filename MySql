@@ -1,1 +1,28 @@
+#1.Выведите поступления денег от пользователя с email 'vasya@mail.com'.
+В результат включите все столбцы таблицы и не меняйте порядка их вывода. 
+Если, конечно, хотите успешно пройти проверку результата запроса )
 
+SELECT payer_email, recipient_email, sum, currency, billing_date, comment FROM billing WHERE payer_email=('vasya@mail.com')
+
+#2. Добавьте в таблицу одну запись о платеже со следующими значениями:
+
+    email плательщика: 'pasha@mail.com'
+    email получателя: 'katya@mail.com'
+    сумма: 300.00
+    валюта: 'EUR'
+    дата операции: 14.02.2016
+    комментарий: 'Valentines day present)'
+ 
+INSERT INTO billing (
+	payer_email, recipient_email,
+    sum, currency, billing_date, comment)
+VALUES (
+	'pasha@mail.com',
+	'katya@mail.com',
+	'300.00', 
+    'EUR',
+	'2016-02-14',
+	'Valentines day present\)');
+  
+  #3. Измените адрес плательщика на 'igor@mail.com' для всех записей таблицы, где адрес плательщика 'alex@mail.com'.
+  
