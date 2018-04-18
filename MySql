@@ -1,3 +1,5 @@
+	БАЗОВЫЕ ОПЕРАЦИИ
+
 #1.Выведите поступления денег от пользователя с email 'vasya@mail.com'.
 В результат включите все столбцы таблицы и не меняйте порядка их вывода. 
 Если, конечно, хотите успешно пройти проверку результата запроса )
@@ -41,3 +43,24 @@ OR recipient_email is NULL
 OR payer_email NOT LIKE '%@%'
 OR recipient_email NOT LIKE '%@%'
 
+
+
+	АГРЕГАЦИЯ ДАННЫХ
+	
+USE project_simple;
+
+SELECT AVG(budget) FROM project;
+
+SELECT
+	AVG(DATEDIFF(project_finish, project_start)) as avg_days,
+    MAX(DATEDIFF(project_finish, project_start)) as max_days,
+    MIN(DATEDIFF(project_finish, project_start)) as min_days,
+    client_name
+FROM project WHERE project_finish is not null
+group by client_name
+order by max_days DESC
+LIMIT 10;
+
+#1.Выведите общее количество заказов компании.
+
+select count(1) from project
