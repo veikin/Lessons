@@ -41,3 +41,34 @@ do
   fi
   echo "finish"
 done
+
+#№5
+while [[ 1 ]]
+do
+    echo 'enter your name:'
+    read name
+    if [[ -z $name ]]
+    then
+        break
+    fi
+    echo 'enter your age:'
+    read age
+    if [[ age -eq 0  ]]
+    then
+        break
+    fi
+
+    if [[ $age -le  16 ]]
+    then
+        group=child
+
+    elif [[ $age -gt 25 ]]
+    then
+        group=adult
+
+    else
+        group=youth
+    fi
+    echo "$name, your group is $group"
+done
+echo 'bye'
