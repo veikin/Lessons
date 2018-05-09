@@ -113,3 +113,17 @@ fi
 
 printf "Каталог-источник: ${source_dir}\n"
 printf "Каталог-приемник: ${dest_dir}\n"
+
+#№8
+function localizer {
+   echo "==> В функции localizer начальное значение a равно '$a' "
+   local a
+   echo "==> После объявления local значение a стало равным '$a' "
+   a="localizer version"
+   echo "==> При выходе из функции localizer значение a равно '$a' "
+}
+
+a="test"
+echo "До вызова функции localizer значение a равно '$a' "
+localizer
+echo "После вызова функции localizer значение a равно '$a' "
