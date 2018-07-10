@@ -96,4 +96,16 @@ select count(*) project,
 	sum(budget),
 	avg(datediff(project_finish, project_start))
 	from project
-	
+
+	ВЫБОРКИ ИЗ НЕСКОЛЬКИХ ИСТОЧНИКОВ
+
+№1. Выведите все позиций списка товаров принадлежащие какой-либо категории с названиями товаров и названиями категорий. 
+Список должен быть отсортирован по названию товара, названию категории (Тета-соединение).
+
+select good.name, category.name from category_has_good
+  inner join category
+    on category_has_good.category_id = category.id
+  inner join good
+    on category_has_good.good_id = good.id
+  order by good.name, category.name
+;
