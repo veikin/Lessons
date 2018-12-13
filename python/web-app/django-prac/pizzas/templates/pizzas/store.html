@@ -1,0 +1,19 @@
+{% extends 'pizzas/base.html' %}
+
+{% block content %}
+
+<p>Stores: {{ stores }}</p>
+
+<p>Toppings:</p>
+<ul>
+  {% for stores in store %}
+    <li>
+	<p>{{ stores.date_added|date:'M d, T H:i' }}</p>
+	<p>{{ stores.text|linebreakes }}</p>
+    </li>
+  {% empty %}
+    <li>No stores have been added yet.</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
