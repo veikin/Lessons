@@ -6,8 +6,8 @@ def index(request):
     return render(request, 'pizzas/index.html')
 
 
-def store(request, stores_id):
-    store = Pizza.objects.get(id=stores_id)
-    entries = store.entry_set.order_by('-date_added')
-    context = {'store': store}
+def store(request, toppings_id):
+    store = Pizza.objects.get(id=_id)
+    toppings = store.entry_set.order_by('-date_added')
+    context = {'store': store, 'toppings': toppings}
     return render(request, 'pizzas/store.html', context)
