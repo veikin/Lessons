@@ -17,8 +17,8 @@ class Alien(Sprite):
         self.screen.blit(self.image, self.rect)
 
     def update(self):
-        self.x += (self.ai_settings.alien_speed_factor * 
-                    self.ai_settings.fleet_direction)
+        self.x += (self.ai_settings.alien_speed_factor *
+                self.ai_settings.fleet_direction)
         self.rect.x = self.x
 
     def check_edges(self):
