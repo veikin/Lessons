@@ -48,9 +48,8 @@ class Scoreboard():
         self.high_score_rect.top = self.score_rect.top
 
     def prep_level(self):
-        self.level_image = self.font.render(str(self.stats.level),
-                True, self.text_color, self.ai_settings.bg_color)
-
+        self.level_image = self.font.render(str(self.stats.level), True,
+                                self.text_color, self.ai_settings.bg_color)
         self.level_rect = self.level_image.get_rect()
         self.level_rect.right = self.score_rect.right
         self.level_rect.top = self.score_rect.bottom + 10
