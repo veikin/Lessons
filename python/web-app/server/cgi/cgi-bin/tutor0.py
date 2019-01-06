@@ -1,6 +1,17 @@
-#!/bin/python3
+#!/usr/bin/python3
+import cgi
 
-print('Content-type: text/html\n')
-print('<title>CGI 101</title>')
-print('<h1>A First CGI Script</h1>')
-print('<p>Hello, CGI World!</p>')
+form = cgi.FieldStorage()
+print('Content-type: text/html')
+
+html = """
+<title>tutor0.py</title>
+<h1>Greetings</h1>
+<hr>
+<p>%s</p>
+<hr>"""
+
+if not 'user' in form:
+    print(html % 'Who are you?')
+else:
+    print(html % ('Hello, %s.' % form['user'].value))
