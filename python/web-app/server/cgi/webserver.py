@@ -1,16 +1,20 @@
-import os
-import sys
-from http.server import HTTPServer, CGIHTTPRequestHandler
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
-webdir = "."
-port = 8080
 
-if len(sys.argv) > 1:
-    webdir = sys.argv[1]
-if len(sys.argv) > 2:
-    port = int(sys.argv[2])
+class Server(BaseHTTPRequestHandler):
 
-os.chdir(webdir)
-srvraddr = ('', port)
-srvrobj = HTTPServer(srvraddr, CGIHTTPRequestHandler)
-srvrobj.serve_forever()
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-Type:', 'text/html;charset=utf-8')
+        self.end_headers()
+        self.wfile.write("Hello world!".encode())
+
+
+def run(server_class=HTTPServer, handler_class=Server):
+    server_address = ('', 8000)
+    httpd = server_class(server_address, handler_class)
+    httpd.serve_forever()
+
+
+if __name__ == '__main__':
+    run()
