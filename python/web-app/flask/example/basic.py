@@ -1,17 +1,6 @@
-from flask import Flask
-
-app = Flask(__name__)
+from werkzeug.wrappers import Response
 
 
-@app.route('/hello/<s1>')
-def home(s1):
-    return 'value: ' + s1
-
-
-@app.route('/s1/<s2>')
-def home2(s2):
-    return 'value: ' + s2
-
-
-if __name__ == "__main__":
-    app.run()
+def application(environ, start_response):
+    response = Response('Hello World!', mimetype='text/plain')
+    return response(environ, start_response)
