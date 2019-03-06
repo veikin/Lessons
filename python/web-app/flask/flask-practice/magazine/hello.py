@@ -8,6 +8,19 @@ def hello_world():
     return render_template('base.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/products')
+def products_list()
+
+
+@app.route('/products/<int:priduct_id>')
+def product_list(product_id)
+
+
 if __name__ == '__main__':
     from werkzeug.serving import run_simple
     run_simple(
