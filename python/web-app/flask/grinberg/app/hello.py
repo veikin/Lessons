@@ -65,7 +65,7 @@ def page_not_found(e):
 
 
 class NameForm(Form):
-    name = StringField('What is your name?', validators=[Required()])
+    name = StringField('What is your name?', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
 
