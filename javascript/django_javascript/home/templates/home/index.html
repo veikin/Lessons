@@ -9,16 +9,27 @@
     <title>My Server</title>
 </head>
 <body>
-    <h1>Что такое DOM</h1>
+    <h1>Javascript practice</h1>
 
     <div id="wrapper">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, unde.</p>
-
+        <p class="color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, unde.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <p class="color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, maiores tenetur. Repellat.</p>
 
+        <ul>
+            <li>one</li>
+            <li class="color">two</li>
+            <li>three</li>
+        </ul>
     </div>
-    <script src="{% static "home/script.js" %}"></script>
+
+    <button id="alert">Alert</button>
+    <button id="confirm">Confirm</button>
+
+    <input type="text">
+    <button>Save</button>
+
+    <script async src="{% static "home/script.js" %}"></script>
 </body>
 </html>
