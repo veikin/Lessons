@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eea5421e-71d9-4cdb-8819-c6351116b209" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/static/home/blog/js/components/header.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/static/home/blog/js/core/component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/static/home/blog/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/static/home/blog/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/home/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_javascript/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_javascript/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="eea5421e-71d9-4cdb-8819-c6351116b209" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="53" />
     <option name="width" value="1390" />
@@ -138,32 +127,6 @@
             <path>
               <item name="django_javascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,17 +206,17 @@
       <workItem from="1552584045063" duration="778000" />
       <workItem from="1552637805154" duration="18151000" />
       <workItem from="1552722851954" duration="13392000" />
-      <workItem from="1552804500641" duration="17217000" />
+      <workItem from="1552804500641" duration="17615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103231000" />
+    <option name="totallyTimeSpent" value="103629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.28655282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.28655282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.502439" side_tool="true" weight="0.2524013" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -267,7 +230,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.18161926" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.18161926" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
