@@ -15,3 +15,7 @@ def second(request):
 
 def third(request):
     return render(request, 'home/third.html')
+
+
+def blog(request):
+    return render(request, 'home/blog.html')
